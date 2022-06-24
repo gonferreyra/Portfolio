@@ -27,22 +27,23 @@
             </a>
             <nav class="navbar-links">
                 <ul class="menu">
-                    <li><a onclick="showHide()" href="index.html">Home</a></li>
-                    <li><a onclick="showHide()" href="#">About</a></li>
-                    <li><a onclick="showHide()" href="#">Education</a></li>
-                    <li><a onclick="showHide()" href="#">Portfolio</a></li>
-                    <li><a onclick="showHide()" href="#">Contact</a></li>
+                    <li><a onclick="showHide()" href="#home">Home</a></li>
+                    <li><a onclick="showHide()" href="#about">About</a></li>
+                    <li><a onclick="showHide()" href="#education">Education</a></li>
+                    <li><a onclick="showHide()" href="#portfolio">Portfolio</a></li>
+                    <li><a onclick="showHide()" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="front-page">
+        <!-- </section> -->
+        <section id="home" class="front-page">
             <div class="front-page-content">
                 <div class="front-page-content-image">
                     <img src="./img/avatar-person.svg" alt="">
                 </div>
                 <div class="front-page-content-text">
-                    <h3 class="name">asdasdas asdasd</h3>
-                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <h3 class="name">Gonzalo Ferreyra</h3>
+                    <p class="text">FrontEnd Developer - Student | HTML | CSS | JAVASCRIPT</p>
                     <div class="social">
                         <ul>
                             <li><a href=""><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
@@ -60,21 +61,20 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="about-container">
                 <div class="about-title">
                     <h3>About Me</h3>
                 </div>
                 <div class="about-content">
                     <div class="about-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas
-                            tellus. Eu leo morbi massa sem faucibus nulla gravida arcu ante sollicitudin orci nunc
-                            gravida.</p>
+                        <p>I'm from the city of Córdoba, Argentina. I started as a self taught programming
+                            student and currently doing on NUCBA Full Stack MERN Bootcamp and in One Next Oracle
+                            Education program with Alura Latam.</p>
                     </div>
                     <div class="about-skills">
-                        <h4>What are my skills?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ipsum sit nibh amet egestas
-                            tellus.</p>
+                        <h4>My current skils.</h4>
+                        <!-- <p>Always learning something new.</p> -->
                     </div>
                     <div class="about-content-tech">
                         <div class="about-content-icon-cards">
@@ -115,37 +115,38 @@
                 </div>
             </div>
         </section>
-        <section class="education">
+        <section id="education" class="education">
             <div class="education-title">
                 <h3>Education</h3>
             </div>
             <div class="education-container">
                 <div class="education-card-container">
-                    <div class="education-card">
+                    <div class="education-card card-nucba">
                         <div class="education-card-logo">
-                            <img src="./img/nucba-logo.png" alt="">
+                            <a href="https://nucba.com.ar/" target="_blank"><img src="./img/nucba-logo.png"
+                                    alt="nucba-logo"></a>
+
                         </div>
                         <div class="education-card-info">
                             <h4>NUCBA - Full Stack Web Programing</h4>
-                            <p>Html, Css, Javascrpt Vanila, MongoDB, ExpressJS, ReactJS, and NodeJS</p>
+                            <p>Html, Css, Javascript, MongoDB, ExpressJS, ReactJS, and NodeJS</p>
                         </div>
                     </div>
-                </div>
-                <div class="education-card-container">
-                    <div class="education-card">
+                    <div class="education-card card-oracle">
                         <div class="education-card-logo">
-                            <img src="./img/one-next2.png" alt="">
+                            <a href="https://www.oracle.com/ar/education/oracle-next-education/" target="_blank"><img
+                                    src="./img/one-next2.png" alt=""></a>
                             <!-- Ver porque sale tan pequeña la imagen -->
                         </div>
                         <div class="education-card-info">
-                            <h4>ONE Oracle Next Education - Alura Latam</h4>
-                            <p>Program Logic, Front End, Java</p>
+                            <h4>ONE Oracle Next Education - Alura</h4>
+                            <p>Programing Logic, Front End, Javascript, Git, Github, Java</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="portfolio-container">
                 <div class="portfolio-title">
                     <h3>Portfolio</h3>
@@ -154,44 +155,74 @@
                     <div class="portfolio-card">
                         <!-- <p>Projects</p> -->
                         <div class="portfolio-card-img">
-                            <img src="./img/landing-cryptonucba.vercel.app_.png" alt="">
+                            <img src="./img/nucba-crypto.jpg" alt="">
                         </div>
-                        <p>Landing page, using HTML and CSS, using JS only to make the "hamburguer" menu. Fully
-                            responsive adaptable to every device</p>
+                        <p>Landing Page</p>
                         <div class="portfolio-card-btn">
                             <button>Github</button>
-                            <button>Website</button>
+                            <button>Site</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <!-- <p>Projects</p> -->
+                        <div class="portfolio-card-img">
+                            <img src="./img/alura-resize.png" alt="">
+                        </div>
+                        <p>Text Decripter</p>
+                        <div class="portfolio-card-btn">
+                            <button>Github</button>
+                            <button>Site</button>
+                        </div>
+                    </div>
+                    <div class="portfolio-card">
+                        <!-- <p>Projects</p> -->
+                        <div class="portfolio-card-img">
+                            <img src="./img/ahorcado2.png" alt="">
+                        </div>
+                        <p>Hangman Game</p>
+                        <div class="portfolio-card-btn">
+                            <button>Github</button>
+                            <button>Site</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section id="contact" class="contact">
             <div class="contact-container">
-                <form action="" class="contact-form">
-                    <div class="contact-name">
-                        <input type="text" class="contact-name-input" placeholder="Name*">
-                    </div>
-                    <div class="contact-email">
-                        <input type="email" class="contact-email-input" placeholder="Email*">
-                    </div>
-                    <div class="contact-msg">
-                        <textarea name="" id="" class="contact-msg-textarea" placeholder="Message*"></textarea>
-                    </div>
-                    <div class="contact-btn">
-                        <button>Contact</button>
-                    </div>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-info-container">
-                        <h4>Gonzalo</h4>
-                        <p>Age: <span>35</span></p>
-                        <p>Address: <span>Argentina</span></p>
-                        <p>E-mail: <span>sdsdf@gmail.com</span></p>
-                    </div>
+                <div class="contact-title">
+                    <h3>Contact</h3>
+                </div>
+                <div class="contact-form-container">
+                    <form action="" class="contact-form">
+                        <div class="contact-name">
+                            <input type="text" class="contact-name-input" placeholder="Name*">
+                        </div>
+                        <div class="contact-email">
+                            <input type="email" class="contact-email-input" placeholder="Email*">
+                        </div>
+                        <div class="contact-msg">
+                            <textarea name="" id="" class="contact-msg-textarea" placeholder="Message*"></textarea>
+                        </div>
+                        <div class="contact-btn">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                    <!-- <div class="contact-info">
+                        <div class="contact-info-container">
+                            <h4>Gonzalo</h4>
+                            <p>Age: <span>35</span></p>
+                            <p>Address: <span>Argentina</span></p>
+                            <p>E-mail: <span>sdsdf@gmail.com</span></p>
+                        </div>
+                    </div> -->
                 </div>
             </div>
+
         </section>
+        <footer>
+
+        </footer>
     </div>
 
 
