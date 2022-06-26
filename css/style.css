@@ -13,18 +13,15 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    /* background: #191C26; */
     background-color: #f9f9fc;
-    /* background-color: white; */
     color: #7e7e7e;
-    /* color: #fff; */
-    /* color: #A9AFC3 */
     line-height: 30px;
 }
 
 @media screen and (min-width: 1024px) {
     body {
-        max-width: 1024px;
+        /* max-width: 1024px; */
+        max-width: 940px;
         margin: auto;
     }
 }
@@ -42,7 +39,8 @@ h3 {
 
 @media screen and (max-width: 1024px) {
     body {
-        max-width: 940px;
+        /* max-width: 940px; */
+        max-width: 700px;
         margin: auto;
     }
 }
@@ -56,10 +54,8 @@ h3 {
     position: fixed;
     overflow: hidden;
     z-index: 1;
-    /* background-color: #efefef; */
     display: flex;
     justify-content: space-between;
-    border: 1px solid lightgrey;
     background-color: #fff;
 }
 
@@ -75,7 +71,6 @@ h3 {
     text-decoration: none;
     padding: 1.5rem;
     display: block;
-    /* background-color: lightslategray; */
     color: black;
 }
 
@@ -127,7 +122,6 @@ h3 {
 
     .navbar-links.active {
         display: flex;
-        /* background-color: #585d65; */
         margin-top: 1rem;
     }
 
@@ -140,6 +134,7 @@ h3 {
         left: 50px;
         right: 50px;
         padding: 0 0.7rem;
+        border: 1px solid lightgrey;
     }
 }
 
@@ -157,16 +152,9 @@ h3 {
     }
 }
 
-/* @media screen and (max-width: 768px) {
-    .header {
-        width: 100%;
-    }
-} */
-
 .header-logo {
     display: flex;
     align-items: center;
-    /* margin-bottom: 0.5rem; */
 }
 
 .header-logo p {
@@ -186,8 +174,6 @@ h3 {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    /* max-width: 320px; */
-    /* max-width: 88%; */
     margin: auto;
     padding: 2rem 0 4rem;
     max-width: 80%;
@@ -245,21 +231,11 @@ h3 {
     width: 25px;
 }
 
-@media screen and (max-width: 768px) {
-    /* .front-page {
-        display: flex;
-        justify-content: center;
-    } */
-}
-
 /* -------------------------------------------- */
 /* -----------------  ABOUT  ------------------ */
 /* -------------------------------------------- */
 
 .about {
-    /* max-width: 330px; */
-    /* max-width: 88%;
-    margin: auto auto 4rem auto; */
     background-color: #fff;
 }
 
@@ -281,7 +257,6 @@ h3 {
     margin: auto auto 2rem auto;
 }
 
-
 .about-info p {
     margin-bottom: 2rem;
 }
@@ -293,7 +268,6 @@ h3 {
 .about-content-icon-cards {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     justify-content: space-around;
     align-items: center;
     column-gap: 4rem;
@@ -311,14 +285,9 @@ h3 {
     gap: 20px;
 }
 
-
 /* -------------------------------------------- */
 /* ---------------- EDUCATION  ---------------- */
 /* -------------------------------------------- */
-
-/* .education {
-    margin: auto auto 2rem auto;
-} */
 
 .education-container {
     max-width: 80%;
@@ -350,21 +319,16 @@ h3 {
 .education-card {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     align-items: flex-start;
     row-gap: 1rem;
     border: 3px solid #f9f9fc;
     background-color: #fff;
     border-radius: 5px;
     padding: 1.5rem;
-    max-width: 400px;
+    max-width: 360px;
     margin: 1rem auto;
     box-shadow: 9px 6px 13px 1px #7C7C7C;
 }
-
-/* .education-card:hover {
-    box-shadow: 6px 6px 12px 5px #7C7C7C;
-} */
 
 .education-card-logo {
     display: flex;
@@ -379,7 +343,9 @@ h3 {
     width: 50px;
 }
 
-/* VER SI CONVIENE HACER QUE LAS 2 CARDS TENGAN EL MISMO HEIGHT FIJO, O COMO ESTA QUE CRECE A PARTIR DEL CONTENIDO */
+.card-oracle img {
+    width: 80px;
+}
 
 @media screen and (min-width:768px) {
     .education-card {
@@ -399,6 +365,7 @@ h3 {
 @media screen and (min-width: 1024px) {
     .education-card-container {
         display: flex;
+        column-gap: 1rem;
     }
 }
 
@@ -423,41 +390,35 @@ h3 {
 }
 
 .portfolio-card {
+    position: relative;
     text-align: justify;
     max-width: 360px;
     margin: auto;
     padding: 1rem;
-    /* border: 2px solid lightslategray; */
     border-radius: 20px;
-    /* background-color: #BBBFCA; */
-    /* background-color: lightslategray; */
-    /* border: 1px solid black; */
+    height: 450px;
 }
 
-/* .portfolio-card:hover {
-    background-color: rgb(197, 197, 197);
-} */
-
-/* .portfolio-card:hover p {
-    color: black;
-} */
-
-.portfolio-card p {
+.portfolio-card .p-title {
     font-size: 1.1rem;
-    line-height: 1.8;
-    /* text-align: center; */
-    margin: 1rem 0;
-    /* color: white; */
+    /* line-height: 1.8; */
+    margin: 1rem 0 0.5rem;
+    color: #282828;
+    font-weight: 400;
 }
 
-/* .portfolio-card p:hover {
-    color: white;
-} */
+.portfolio-card .p-description {
+    font-size: .8rem;
+    line-height: 1.5;
+}
 
 .portfolio-card-btn {
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
+    margin-top: 1rem;
+    position: absolute;
+    bottom: 20px;
 }
 
 .portfolio-card-btn button {
@@ -468,14 +429,25 @@ h3 {
     border-radius: 10px;
     color: #585d65;
     font-family: inherit;
-    /* margin: 0 0.5rem; */
 }
 
 .portfolio-card-btn button:hover {
-    /* background-color: #BBBFCA;
-    border: 1px solid #E8E8E8;
-    color: black; */
     box-shadow: 1px 2px 4px 4px #dfdfdf;
+    background-color: black;
+    color: white;
+}
+
+.portfolio-card-btn a {
+    text-decoration: none;
+    color: #585d65;
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+}
+
+.portfolio-card-btn a:hover {
+    box-shadow: 1px 2px 4px 4px #dfdfdf;
+    background-color: black;
+    color: white;
 }
 
 .portfolio-card-img {
@@ -484,9 +456,9 @@ h3 {
 
 .portfolio-card-img img {
     width: 140px;
-    /* width: 200px; */
     width: 100%;
     height: 230px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 1023px) {
@@ -495,13 +467,13 @@ h3 {
         display: flex;
         column-gap: 2rem;
         scroll-snap-type: x mandatory;
+        height: 500px;
     }
 
     .portfolio-card {
         flex-shrink: 0;
         scroll-snap-align: start;
         max-width: 290px;
-        max-height: 419px;
     }
 }
 
@@ -512,12 +484,9 @@ h3 {
         row-gap: 3rem;
         column-gap: 2rem;
     }
-}
 
-@media screen and (min-width: 1024px) {
-    .portfolio-card-img img {
-        width: 100%;
-        height: 330px;
+    .portfolio-card {
+        box-shadow: 0px 0px 13px 1px #dbdbdb;
     }
 }
 
@@ -541,12 +510,10 @@ h3 {
 }
 
 .contact-form-container {
-    /* max-width: 80%;
-    margin: auto auto 2rem auto; */
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    max-width: 80%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -560,10 +527,8 @@ h3 {
     border: none;
     border-bottom: 1px solid #b4b3b3;
     padding: 1rem 0;
-    /* background-color: #f9f9fc; */
     width: 100%;
     font-family: inherit;
-    /* font-weight: 400; */
     color: #7E7E7E;
     font-weight: 500;
 }
@@ -572,7 +537,6 @@ h3 {
     resize: none;
     border: none;
     width: 100%;
-    /* background-color: #f9f9fc */
     padding: 1rem 0;
     font-family: inherit;
 }
@@ -595,19 +559,20 @@ h3 {
     border: 2px solid #7E7E7E;
 }
 
-@media screen and (min-width: 768px) {
-    /* .contact-container {
-        flex-direction: row;
-        justify-content: center;
-    }
-    .contact-form {
-        width: 50%;
-    }
-    .contact.info {
-        width: 35%;
-    } */
+.contact-btn button:hover {
+    box-shadow: 1px 2px 4px 4px #dfdfdf;
+    background-color: black;
+    color: white;
 }
 
-/* -------------------------------------------- */
-/* ----------------  SIDEBAR  ----------------- */
-/* -------------------------------------------- */
+.error {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    color: white;
+    border-radius: 10px;
+}
