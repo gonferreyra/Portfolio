@@ -37,7 +37,7 @@ h3 {
     line-height: 1.2;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     body {
         /* max-width: 940px; */
         max-width: 700px;
@@ -270,12 +270,13 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    column-gap: 4rem;
+    column-gap: 6rem;
     row-gap: 1rem;
 }
 
 .icons-cards {
-    width: 75px;
+    /* width: 75px; */
+    width: 13%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,6 +342,10 @@ h3 {
 
 .education-card-logo img {
     width: 50px;
+}
+
+.education-card-logo a {
+    text-decoration: none;
 }
 
 .card-oracle img {
